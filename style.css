@@ -112,7 +112,6 @@
     transform: scale(1.03);
   }
   
-  /* Responsive label-input side-by-side on wide screens */
   @media screen and (min-width: 768px) {
     .form-group,
     .form-group-1 {
