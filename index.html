@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <title>Client Information Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="personal-information-form" method="POST">
+            <img src="assets/logo.png" alt="Logo" class="logo" />
+            <h3>CLIENT INFORMATION FORM</h3>
+            <fieldset class="personal-info">
+                <legend class="title">Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="companyname">Company/Organization(if any):</label>
+                    <input type="text" id="companyname" name="companyname"
+                        placeholder="" />
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position/Role:</label>
+                    <input type="text" id="position" name="position" placeholder="" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="" required />
+                </div>
+                <legend>Preferred Method of Contact:</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="preferred_contact" value="email" />
+                        Email</label>
+                    <label><input type="radio" name="preferred_contact" value="phone" />
+                        Phone</label>
+                    <label><input type="radio" name="preferred_contact" value="messagingapp" />
+                        Messaging App</label>
+                </div>
+            </fieldset>
+            <fieldset class="project-details">
+                <legend class="title">Project Details</legend>
+                <div class="form-group-1">
+                    <label for="projectname">Project Name/Title:</label>
+                    <input type="text" id="projectname" name="projectname" placeholder=""
+                        required />
+                </div>
+                <div class="typeofservice">
+                    <label for="typeofservice">Type of Service Required:</label>
+                    <label><input type="checkbox" name="web design" value="web" />Web
+                        Design</label>
+                    <label><input type="checkbox" name="graphic design" value="graphic" />Graphic Design</label>
+                    <label><input type="checkbox" name="branding" value="branding" />Branding</label>
+                    <label><input type="checkbox" name="marketing" value="marketing" />Marketing</label>
+                </div>
+                <div class="description">
+                    <label for="description">Brief Description of the Project:</label>
+                    <textarea id="description" name="description" rows="4" cols="50"
+                        placeholder=""></textarea>
+                </div>
+                <div class="form-group-1">
+                    <label for="targetaudience">Target Audience:</label>
+                    <input type="text" id="targetaudience" name="targetaudience"
+                        placeholder="" />
+                </div>
+                <div class="form-group-1">
+                    <label for="Deadline">Deadline or Timeline:</label>
+                    <input type="text" id="deadline" name="deadline" placeholder="" />
+                </div>
+                <div class="budget">
+                    <label for="budgetrange">Budget Range:</label>
+                    <div class="radio-group-budget">
+                        <label><input type="radio" name="budget-range" value="budget1" />Below
+                            P10,000</label>
+                        <label><input type="radio" name="budget-range" value="budget2" />P10,000 - P30,000</label>
+                        <label><input type="radio" name="budget-range" value="budget3" />P50,000+</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="file&contentprovision">
+                <legend>File & Content Provision</legend>
+                <label for="question1">Will you provide content (text, images, etc)?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="question" value="answer1" />Yes</label>
+                    <label><input type="radio" name="question" value="answer2" />No</label>
+                    <label><input type="radio" name="question" value="answer3" />Partially</label>
+                </div>
+                <label for="question2">Do you have brand assets (logo, colors, fonts)?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="question" value="answer1" />Yes</label>
+                    <label><input type="radio" name="question" value="answer2" />Still in
+                        development</label>
+                </div>
+            </fieldset>
+            <fieldset class="approvals&followups">
+                <legend class="title">Approval & Follow-ups</legend>
+                <div class="form-group">
+                    <label for="question1">Who will approve designs and decisions on you side?</label>
+                    <input type="text" id="approver" name="approver" placeholder=""
+                        required />
+                </div>
+                <div class="typeofservice">
+                    <label for="question2">How often do you prefer updates?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="question" value="answer1" />Daily</label>
+                        <label><input type="radio" name="question" value="answer2" />Weekly</label>
+                        <label><input type="radio" name="question" value="answer2" />At key
+                            mists only</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="signature">
+                <legend>Signature (if printed)</legend>
+                <label for="signature">Client Signature: _________________________</label>
+                <label for="date">Date:_______________________</label>
+            </fieldset>
+        </form>
+        <div class="btn-container">
+        <button id="submit-btn" type="submit" onclick="alert('Your form has been successfully submitted!.')">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
