@@ -6,7 +6,8 @@
   body {
     margin: 0;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #f7f7f7a4;
+  
   }
   
   .container {
@@ -14,16 +15,34 @@
     margin: auto;
     background: #fff;
     padding: 30px;
+     border: 3px solid #000000;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #f7f7f757;
+    background: linear-gradient(to right, #98a9eb, #7886bb);
   }
   
   .logo {
-    display: block;
-    margin: 0 auto 15px;
-    width: 70px;
-    height: auto;
-  }
+  width: 80px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1.2;
+}
+h1 span {
+  font-size: 16px;
+  font-weight: normal;
+}
   
   h3 {
     text-align: center;
@@ -33,11 +52,11 @@
   }
   
   fieldset {
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 6px;
-    background: #fafafa;
+    background: #c1caf0;
   }
   
   legend {
@@ -55,6 +74,7 @@
   
   .form-group label,
   .form-group-1 label {
+    
     margin-bottom: 5px;
     font-weight: 600;
   }
@@ -75,16 +95,16 @@
     min-height: 80px;
   }
   
-  .radio-group,
-  .radio-group-budget {
+  .checkbox-group,
+  .checkbox-group-budget {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 10px;
   }
   
-  .radio-group label,
-  .radio-group-budget label {
+  .checkbox-group label,
+  .checkbox-group-budget label {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -97,7 +117,7 @@
   }
   
   #submit-btn {
-    background-color: #007bff;
+    background-color: #3347a0;
     color: #fff;
     padding: 12px 25px;
     font-size: 16px;
@@ -122,7 +142,7 @@
     .form-group label,
     .form-group-1 label {
       flex: 1;
-      text-align: right;
+      text-align: left;
       margin-right: 15px;
       margin-bottom: 0;
     }
