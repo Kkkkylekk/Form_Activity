@@ -12,7 +12,10 @@
 <body>
     <div class="container">
         <form class="personal-information-form" method="POST">
-            <img src="assets/logo.png" alt="Logo" class="logo" />
+            <header>
+      <img src="assets/logo.png" class="logo">
+      <h1>BANYAN<br><span>WEB DESIGN</span></h1>
+    </header>
             <h3>CLIENT INFORMATION FORM</h3>
             <fieldset class="personal-info">
                 <legend class="title">Personal Information</legend>
@@ -44,12 +47,12 @@
                         placeholder="" required />
                 </div>
                 <legend>Preferred Method of Contact:</legend>
-                <div class="radio-group">
-                    <label><input type="radio" name="preferred_contact" value="email" />
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="preferred_contact" value="email" />
                         Email</label>
-                    <label><input type="radio" name="preferred_contact" value="phone" />
+                    <label><input type="checkbox" name="preferred_contact" value="phone" />
                         Phone</label>
-                    <label><input type="radio" name="preferred_contact" value="messagingapp" />
+                    <label><input type="checkbox" name="preferred_contact" value="messagingapp" />
                         Messaging App</label>
                 </div>
             </fieldset>
@@ -84,26 +87,26 @@
                 </div>
                 <div class="budget">
                     <label for="budgetrange">Budget Range:</label>
-                    <div class="radio-group-budget">
-                        <label><input type="radio" name="budget-range" value="budget1" />Below
+                    <div class="checkbox-group-budget">
+                        <label><input type="checkbox" name="budget-range" value="budget1" />Below
                             P10,000</label>
-                        <label><input type="radio" name="budget-range" value="budget2" />P10,000 - P30,000</label>
-                        <label><input type="radio" name="budget-range" value="budget3" />P50,000+</label>
+                        <label><input type="checkbox" name="budget-range" value="budget2" />P10,000 - P30,000</label>
+                        <label><input type="checkbox" name="budget-range" value="budget3" />P50,000+</label>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="file&contentprovision">
                 <legend>File & Content Provision</legend>
                 <label for="question1">Will you provide content (text, images, etc)?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="question" value="answer1" />Yes</label>
-                    <label><input type="radio" name="question" value="answer2" />No</label>
-                    <label><input type="radio" name="question" value="answer3" />Partially</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="question" value="answer1" />Yes</label>
+                    <label><input type="checkbox" name="question" value="answer2" />No</label>
+                    <label><input type="checkbox" name="question" value="answer3" />Partially</label>
                 </div>
                 <label for="question2">Do you have brand assets (logo, colors, fonts)?</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="question" value="answer1" />Yes</label>
-                    <label><input type="radio" name="question" value="answer2" />Still in
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="question" value="answer1" />Yes</label>
+                    <label><input type="checkbox" name="question" value="answer2" />Still in
                         development</label>
                 </div>
             </fieldset>
@@ -116,10 +119,10 @@
                 </div>
                 <div class="typeofservice">
                     <label for="question2">How often do you prefer updates?</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="question" value="answer1" />Daily</label>
-                        <label><input type="radio" name="question" value="answer2" />Weekly</label>
-                        <label><input type="radio" name="question" value="answer2" />At key
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="question" value="answer1" />Daily</label>
+                        <label><input type="checkbox" name="question" value="answer2" />Weekly</label>
+                        <label><input type="checkbox" name="question" value="answer2" />At key
                             mists only</label>
                     </div>
                 </div>
